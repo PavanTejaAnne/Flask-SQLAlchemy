@@ -14,7 +14,7 @@ app = Flask(__name__)
 def welcome():
 	return " Hello. Enter the correct extensions for each request."
 
-@app.route('/'v1/expenses', methods=['GET'])
+@app.route('/v1/expenses', methods=['GET'])
 def get_expenses():
 	try:
 		users = User.query.all()
